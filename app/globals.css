@@ -3,25 +3,127 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --gradient-color: rgba(5, 7, 12, 0.65);
+  --darker-gradient-color: rgba(5, 7, 12, 0.75);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer components {
+    .textwrapper {
+        @apply absolute inline-block overflow-hidden w-0 whitespace-pre text-[#fff] border-b pb-[0.15em];
+    }
+    .fancytexthover {
+        @apply relative inline-block
+    }
+    .bg-turnos {
+        @apply !bg-neutral-950/90
+    }
+    .flex-container {
+        @apply flex justify-center items-center
+    }
+    .father-scroll {
+        @apply overflow-y-scroll snap-y snap-mandatory
+    }
+    .children-scroll {
+        @apply snap-start snap-always
+    }
+}
+
+.bg-first-section {
+    background: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../components/assets/barber1.webp");
+    background-size: cover;
+}
+.bg-second-section {
+    background: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../components/assets/barber2.webp");
+    background-size: cover;
+}
+.bg-shedule {
+    background: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../components/assets/barberia-maquinas2.webp");
+    background-size: cover;
+}
+.bg-about-us {
+    background: linear-gradient(var(--darker-gradient-color), var(--darker-gradient-color)), url("../components/assets/barberia-lugar2.webp");
+    background-size: cover;
+}
+.bg-gallery {
+    background: linear-gradient(var(--darker-gradient-color), var(--darker-gradient-color)), url("../components/assets/barberia2.jpg");
+    background-size: cover;
+}
+
+.fancytexthover:hover .textwrapper {
+    width: 100%;
+}
+
+.textwrapper {
+    transition: width 500ms;
+}
+
+.text-webkit-center {
+  text-align: -webkit-center;
+}
+
+.text-hover-effect:hover {
+    mask-image: linear-gradient(-75deg, rgba(0,0,0,.65) 30%, #000 50%, rgba(0,0,0,.65) 70%);
+    mask-size: 200%;
+    animation: shine 2s infinite;
   }
+  
+.text-effect {
+    mask-image: linear-gradient(-75deg, rgba(0,0,0,.75) 30%, #fff 50%, rgba(0,0,0,.75) 70%);
+    mask-size: 200%;
+    animation: shine 3s infinite;
+  }
+  
+  @keyframes shine {
+    from {
+      mask-position: 150%;
+    }
+    
+    to {
+      mask-position: -50%;
+    }
+  }
+
+  .reserva:hover + .arrow-animation {
+      width: fit-content;
+      height: fit-content;
+      position: relative;
+      animation-name: arrow;
+      animation-duration: 3s;
+  }
+  @keyframes arrow {
+    0%   { left:0px}
+    25%   { left:30px}
+    50% { left:0px}
+    75% { left:30px}
+    100% { left:0px}
+  }
+
+::-webkit-scrollbar {
+  display: none;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.text-align-last {
+  text-align-last: center;
 }
+
+/* * {
+    font-family: 'Quicksand', sans-serif;
+} */
+
+/* Scrollbar styles */
+
+/* ::-webkit-scrollbar {
+  width: 0.65vw;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #976a50;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #805942;
+}
+
+::-webkit-scrollbar-track {
+background-color: #e0a37f;
+} */
