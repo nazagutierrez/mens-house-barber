@@ -18,7 +18,7 @@ export default function FirstHomeSection() {
           brindándote una atención exclusiva y personalizada.
         </p>
         <p className="underline underline-offset-4 decoration-1">
-          Men{"'"}s House. "Solo Buenos Momentos "
+          Men{"'"}s House. {'"'}Solo Buenos Momentos{'"'}
         </p>
         <div className="self-center md:self-start">
           <div className="lg:mt-10">

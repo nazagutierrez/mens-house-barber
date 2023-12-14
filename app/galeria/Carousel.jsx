@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import {
   MdOutlineArrowBackIos,
   MdOutlineArrowForwardIos,
@@ -22,13 +22,13 @@ const Carousel = () => {
   const [selectedImage, setSelectedImage] = useState(images[0]);
   const [loaded, setLoaded] = useState(false);
 
-  // useEffect(() => {
-  //   // Autoplay timer
-  //   const interval = setInterval(() => {
-  //     selectNewImage(selectedIndex, images);
-  //   }, 3700);
-  //   return () => clearInterval(interval);
-  // });
+  useEffect(() => {
+    // Autoplay timer
+    const interval = setInterval(() => {
+      selectNewImage(selectedIndex, images);
+    }, 3700);
+    return () => clearInterval(interval);
+  });
 
   const selectNewImage = (index, images, next = true) => {
     setLoaded(false);
@@ -66,7 +66,7 @@ const Carousel = () => {
             priority
             src={images[selectedIndex]}
             // xl:h-[700px]
-            className={`w-[300px] xl:w-[400px] h-[500px] object-cover opacity-0 transition-all duration-1000 ${
+            className={`w-[300px] xl:w-[400px] h-[650px] object-cover opacity-0 transition-all duration-1000 ${
               loaded ? "opacity-100" : ""}`}
             alt="img"
             onLoad={() => setLoaded(true)}

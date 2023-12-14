@@ -28,6 +28,7 @@ export default function AdminDisabledFixedDays({ howOften }) {
     } else if (howOften === "biweekly") {
       setDisabledDays(biweeklyDisabledDays);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [weeklyDisabledDays, biweeklyDisabledDays]);
 
   const handleClick = (event) => {

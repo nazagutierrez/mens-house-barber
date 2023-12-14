@@ -1,6 +1,7 @@
 {
   "hosting": {
-    "source": ".",
+    "site": "menshouse-barber",
+    "source": "./",
     "ignore": [
       "firebase.json",
       "**/.*",

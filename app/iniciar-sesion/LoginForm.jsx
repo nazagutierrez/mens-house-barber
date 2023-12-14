@@ -25,6 +25,7 @@ useEffect(() => {
         router.push("/");
       }
     })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dbUsers]);
 
   function login(e) {
@@ -51,7 +52,7 @@ useEffect(() => {
         <div
           className={`${!isRegistering && "hidden"} w-full flex-container flex-col`}
         >
-          <label className="text-darkerWhite self-start pl-24 italic">
+          <label className="text-darkerWhite self-start pl-24 italic mt-8">
             Nombre
           </label>
           <input
@@ -64,7 +65,7 @@ useEffect(() => {
         <div
           className={`${!isRegistering && "hidden"} w-full flex-container flex-col`}
         >
-          <label className="text-darkerWhite self-start pl-24 italic">
+          <label className="text-darkerWhite self-start pl-24 italic mt-5">
             Apellido
           </label>
           <input
@@ -74,7 +75,7 @@ useEffect(() => {
             className="border placeholder-black/50 border-gray-400 bg-grayCustom text-black px-3 w-3/4 py-1 rounded-sm shadow-md hover:border-gray-200"
           />
         </div>
-        <label className="text-darkerWhite self-start pl-24 italic">
+        <label className="text-darkerWhite self-start pl-24 italic mt-5">
           Email
         </label>
         <input
@@ -85,7 +86,7 @@ useEffect(() => {
           className="border placeholder-black/50 border-gray-400 bg-grayCustom text-black px-3 w-3/4 py-1 rounded-sm shadow-md hover:border-gray-200"
         />
         <p className="text-red-500 text-xs italic" id="error-email"></p>
-        <label className="text-darkerWhite self-start pl-24 italic">
+        <label className="text-darkerWhite self-start pl-24 italic mt-5">
           Contraseña
         </label>
         <input
@@ -96,7 +97,7 @@ useEffect(() => {
           className="border placeholder-black/50 border-gray-400 bg-grayCustom text-black px-3 w-3/4 py-1 rounded-sm shadow-md hover:border-gray-200"
         />
         <p className="text-red-500 text-xs italic" id="error-password"></p>
-        <button type="submit" className="bg-grayCustom px-2 py-1 rounded-md w-1/2 text-xl mt-3 shadow-md transition-all text-hover-effect">
+        <button type="submit" className="bg-grayCustom px-2 py-1 rounded-md w-1/3 text-xl my-6 shadow-md transition-all text-hover-effect">
           {isRegistering ? "Registrarse" : "Iniciar sesión"}
         </button>
       </form>
