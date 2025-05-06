@@ -42,7 +42,7 @@ useEffect(() => {
 
   return (
     <>
-      <h3 className="text-center text-2xl mb-5 md:mb-0 md:text-3xl text-darkerWhite text-effect z-10 pt-5 md:pt-16 underline underline-offset-4">
+      <h3 className="text-center text-2xl mb-5 md:mb-0 md:text-3xl text-darkerWhite text-effect z-10 pt-5 underline underline-offset-4">
         {isRegistering ? "REGISTRARSE" : "INICIAR SESIÓN"}
       </h3>
       <form
