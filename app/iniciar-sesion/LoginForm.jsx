@@ -97,7 +97,7 @@ useEffect(() => {
           className="border placeholder-black/50 border-gray-400 bg-grayCustom text-black px-3 w-3/4 py-1 rounded-sm shadow-md hover:border-gray-200"
         />
         <p className="text-red-500 text-xs italic" id="error-password"></p>
-        <button type="submit" className="bg-grayCustom px-2 py-1 rounded-md w-1/3 text-xl my-6 shadow-md transition-all text-hover-effect">
+        <button type="submit" className="bg-grayCustom px-2 py-1 rounded-md w-1/2 text-xl my-6 shadow-md transition-all text-hover-effect">
           {isRegistering ? "Registrarse" : "Iniciar sesión"}
         </button>
       </form>
