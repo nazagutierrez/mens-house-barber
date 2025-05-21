@@ -40,7 +40,7 @@ const SliderMenu = () => {
                 unoptimized
                 src={logo}
                 alt="logo"
-                className="w-32 cursor-pointer rounded-md"
+                className="w-32 rounded-md"
               />
             </div>
             <div className="flex flex-col h-full items-center gap-7 underline underline-offset-4 text-lg">
