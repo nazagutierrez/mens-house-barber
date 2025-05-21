@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from "next/image";
-import Logo from "../../components/assets/logo-peluqueria-blanco.png";
+import Logo from "../../components/assets/logo-peluqueria-blanco.webp";
 import Link from "next/link";
 import { BsScissors } from "react-icons/bs";
 
