@@ -8,11 +8,8 @@
 }
 
 @layer components {
-    .textwrapper {
-        @apply absolute inline-block overflow-hidden w-0 whitespace-pre text-[#fff] border-yellow-500/80 border-b pb-[0.15em];
-    }
     .fancytexthover {
-        @apply relative inline-block
+        @apply relative inline-block after:content-[''] after:absolute after:left-0 after:bottom-0 after:h-[1px] after:w-0 after:bg-yellow-500 after:transition-all after:duration-500 hover:after:w-full;
     }
     .bg-turnos {
         @apply !bg-neutral-950/90
@@ -25,25 +22,8 @@
     }
 }
 
-.bg-shedule {
-    background: linear-gradient(var(--gradient-color), var(--gradient-color)), url("../components/assets/barberia-maquinas2.webp");
-    background-size: cover;
-}
-.bg-about-us {
-    background: linear-gradient(var(--darker-gradient-color), var(--darker-gradient-color)), url("../components/assets/barberia-lugar2.webp");
-    background-size: cover;
-}
-.bg-gallery {
-    background: linear-gradient(var(--darker-gradient-color), var(--darker-gradient-color)), url("../components/assets/barberia2.webp");
-    background-size: cover;
-}
-
 .fancytexthover:hover .textwrapper {
     width: 100%;
-}
-
-.textwrapper {
-    transition: width 500ms;
 }
 
 .text-webkit-center {
