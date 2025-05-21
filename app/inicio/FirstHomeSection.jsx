@@ -20,7 +20,7 @@ export default function FirstHomeSection() {
         </p>
       </div>
       <div className="w-1/2 relative flex-col flex-container text-center text-xl mr-2 sm:mr-16 lg:mr-0">
-      <div className="absolute bg-white/10 blur-3xl top-1/2 left-1/2 w-[300px] h-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none" />
+      <div className="absolute bg-white/10 blur-3xl -top-[300%] sm:top-1/2 left-1/2 w-[300px] h-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none" /> 
         <h1 className="mb-5 text-5xl hidden sm:block">AGENDA ABIERTA</h1>
         <div className="flex-container gap-2">
           <Link

@@ -6,7 +6,8 @@ import Link from "next/link";
 
 export default function Galeria() {
   return (
-      <div className="bg-gallery w-screen h-screen flex-container flex-wrap text-xl sm:text-2xl md:p-20 text-darkerWhite text-center father-scroll">
+      <div className="bg-[#1a1a1a] relative w-screen h-screen flex-container flex-wrap text-xl sm:text-2xl md:p-20 text-darkerWhite text-center father-scroll">
+        <div className="absolute bg-white/10 blur-3xl top-[50%] left-1/2 md:left-[28%] w-[300px] h-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none" />
         <section className="relative md:w-1/2 h-full w-3/4 flex-container pb-14 md:pb-0 flex-col children-scroll">
           <p className="text-2xl sm:text-3xl mb-10 sm:mb-24">GALERÍA DE FOTOS</p>
           <p className="mb-5 md:mb-10">

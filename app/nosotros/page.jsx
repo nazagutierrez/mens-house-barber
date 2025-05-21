@@ -6,7 +6,8 @@ import { BsScissors } from "react-icons/bs";
 
 export default function Nosotros() {
   return (
-    <div className="bg-about-us h-screen w-screen px-3 text-center py-20 md:pt-20 xl:pt-36 text-darkerWhite">
+    <div className="bg-[#1a1a1a] relative h-screen w-screen px-3 text-center py-20 md:pt-20 xl:pt-36 text-darkerWhite">
+      <div className="absolute bg-white/10 blur-3xl top-[40%] left-1/2 w-[300px] h-[300px] -translate-x-1/2 -translate-y-1/2 rounded-full pointer-events-none" />
       <div className="flex h-full items-center justify-around md:justify-between gap-5 flex-col lg:text-xl">
         <p className="text-2xl lg:text-3xl italic">
           SOMOS MEN{"'"}S HOUSE BARBER SHOP
