@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import barber from "../../components/assets/barber-1.webp";
 
-export default function FirstHomeSection() {
+export default function SecondHomeSection() {
   return (
     <section className="bg-[#141414] relative h-screen flex-container gap-5 md:gap-20 text-white text-center md:text-start flex-col md:flex-row md:text-xl">
       <Image
