@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <ul className="fixed top-0 left-0 md:pl-20 flex justify-end md:justify-between w-full text-2xl font-semibold text-darkerWhite z-10">
+        <ul className="fixed top-0 left-0 md:pl-20 flex justify-end md:justify-between w-full text-xl font-semibold text-darkerWhite z-50">
           <div className="md:flex hidden flex-row h-20 gap-16 w-full items-center">
             <li>
               <div className="fancytexthover">
