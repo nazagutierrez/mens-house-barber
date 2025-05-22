@@ -31,7 +31,9 @@
 }
 
 .text-hover-effect:hover {
-    mask-image: linear-gradient(-75deg, rgba(0,0,0,.65) 30%, #000 50%, rgba(0,0,0,.65) 70%);
+    transition: all 0.3s ease-in-out;
+    color: #b3a31a;
+    mask-image: linear-gradient(-75deg, rgba(145, 120, 10, 0.75) 30%, #d6d308 50%, rgba(145, 120, 10, 0.75) 70%);
     mask-size: 200%;
     animation: shine 2s infinite;
   }
