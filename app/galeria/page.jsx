@@ -2,7 +2,6 @@ import React from 'react';
 import { BsScissors, BsTools } from "react-icons/bs";
 import { SlArrowDown } from "react-icons/sl";
 import Carousel from "./Carousel";
-import Link from "next/link";
 
 export default function Galeria() {
   return (
@@ -19,7 +18,7 @@ export default function Galeria() {
           </p>
           <div className="flex-container w-4/5 sm:w-full mt-10 sm:mt-24 gap-2">
             <i> <BsScissors /> </i>
-            <p className="underline underline-offset-4 text-effect">MEN{"'"}S HOUSE BARBER</p>
+            <p className="underline underline-offset-4 decoration-1 decoration-yellow-500/70 text-effect">MEN{"'"}S HOUSE BARBER</p>
             <i> <BsScissors /> </i>
           </div>
         <i className="text-4xl absolute md:hidden bottom-20 md:bottom-6"><SlArrowDown /></i>

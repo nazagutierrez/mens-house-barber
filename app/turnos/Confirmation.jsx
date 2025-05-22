@@ -22,7 +22,7 @@ function Confirmation() {
         </div>
         <div className=" flex items-center gap-2 text-effect">
           <i> <BsScissors /> </i>
-          <h3 className="underline underline-offset-4 pt-2 md:pt-0">
+          <h3 className="underline underline-offset-4 decoration-1 decoration-yellow-500/70 pt-2 md:pt-0">
               MEN{"'"}S HOUSE BARBER
           </h3>
           <i> <BsScissors /> </i>

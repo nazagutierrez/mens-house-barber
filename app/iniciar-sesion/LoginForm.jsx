@@ -97,7 +97,7 @@ useEffect(() => {
           className="border placeholder-black/50 border-gray-400 bg-grayCustom text-black px-3 w-3/4 py-1 rounded-sm shadow-md hover:border-gray-200"
         />
         <p className="text-red-500 text-xs italic" id="error-password"></p>
-        <button type="submit" className="bg-grayCustom px-2 py-1 rounded-md w-1/2 text-xl my-6 shadow-md transition-all text-hover-effect">
+        <button type="submit" className="bg-grayCustom px-2 py-1 rounded-md w-1/2 text-xl my-6 shadow-md transition-all hover:transition-all text-hover-effect hover:bg-transparent hover:text-yellow-300/60 border border-yellow-500/60 bg-yellow-200/80">
           {isRegistering ? "Registrarse" : "Iniciar sesión"}
         </button>
       </form>
@@ -108,7 +108,7 @@ useEffect(() => {
             {isRegistering ? "Tienes una cuenta?" : "No tienes una cuenta?"}
           </p>
           <button
-            className="text-darkerWhite text-effect italic underline underline-offset-2 pr-1"
+            className="text-darkerWhite text-effect italic underline underline-offset-2 pr-1 "
             onClick={() => setIsRegistering(!isRegistering)}
           >
             {isRegistering ? "Inicia sesión!" : "Registrate!"}

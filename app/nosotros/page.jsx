@@ -32,7 +32,7 @@ export default function Nosotros() {
           Podes ver algunos ejemplos de nuestros clientes en la sección{" "}
           <Link
             href="/galeria"
-            className="text-effect underline underline-offset-2"
+            className="text-effect underline underline-offset-2 decoration-1 decoration-yellow-500/70"
           >
             Galería.
           </Link>
