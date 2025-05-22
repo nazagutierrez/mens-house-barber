@@ -32,7 +32,7 @@ export default function Header() {
           </div>
           <div className="w-fit md:pr-4 self-center flex-container gap-5">
             <li className="md:flex hidden">
-              <div className="fancytexthover text-5xl">
+              <div className="hover:opacity-70 transition-all text-5xl">
                 <CloseSessionButton />
               </div>
             </li>

@@ -34,14 +34,14 @@ function FinalStep() {
       <h2>Para cancelar el turno comunicate con el peluquero.</h2>
       <div className="mt-5 flex items-center gap-2 text-effect">
         <i> <BsScissors /> </i>
-        <h3 className="underline underline-offset-4">
+        <h3 className="underline underline-offset-4 decoration-1 decoration-yellow-500/70">
             MEN{"'"}S HOUSE BARBER
         </h3>
         <i> <BsScissors /> </i>
       </div>
-      <div className="flex-container gap-5">
-        <Link className="border border-gray-400 bg-grayCustom font-bold text-black text-hover-effect ronded-sm py-1 px-5 mt-4" href="/">INICIO</Link>
-        <Link className="border border-gray-400 bg-grayCustom font-bold text-black text-hover-effect ronded-sm py-1 px-5 mt-4" href="/nosotros">NOSOTROS</Link>
+      <div className="flex-container gap-5 text-black font-bold">
+        <Link className="border hover:bg-transparent hover:text-yellow-200/70 transition-all border-yellow-400/60 bg-yellow-400/60 text-hover-effect ronded-sm py-1 px-5 mt-4" href="/">INICIO</Link>
+        <Link className="border hover:bg-transparent hover:text-yellow-200/70 transition-all border-yellow-400/60 bg-yellow-400/60 text-hover-effect ronded-sm py-1 px-5 mt-4" href="/nosotros">NOSOTROS</Link>
       </div>
     </div>
   );
